@@ -1,0 +1,428 @@
+body {
+	background-color: #000016;
+	font-family: "Roboto", sans-serif;
+	margin: 0 auto;
+	box-sizing: border-box;
+	color: #e3f2fd;
+}
+
+/* Sekcja menu */
+
+#header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #000016;
+	width: 100%;
+	color: #e3f2fd;
+	z-index: 1;
+}
+
+#header .logo {
+	padding-left: 12%;
+}
+
+.logo a {
+	color: #e3f2fd;
+	text-decoration: none;
+}
+
+#header ul {
+	display: flex;
+}
+
+#header ul li {
+	list-style: none;
+	padding: 15px 15px;
+}
+
+#header ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+	transition: 0.3s ease-in-out;
+	font-weight: 400;
+	color: #e3f2fd;
+}
+
+#header ul li a:hover {
+	color: #0089a3;
+}
+
+/* Sekcja główna */
+
+#main {
+	position: relative;
+	z-index: 0;
+	margin-top: 0;
+}
+
+.tekst {
+	position: absolute;
+	font-size: 5em;
+	font-weight: 700;
+	bottom: 175px;
+	right: 185px;
+	z-index: 1;
+}
+
+.tekst p {
+	text-align: right;
+	background-color: #000016;
+	padding-left: 25px;
+	padding-right: 25px;
+	z-index: 0;
+	border-radius: 15px 50px 30px;
+}
+
+#main img {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+/* Plany treningowe */
+
+#plany {
+	background-color: #0089a3;
+}
+
+#plany h1 {
+	text-align: center;
+	padding-top: 5%;
+	text-transform: uppercase;
+	font-size: 75px;
+	letter-spacing: 3px;
+}
+
+.plany-trn {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 50px;
+	padding-bottom: 5%;
+}
+
+.plany-treningowe {
+	/* display: block; */
+	position: relative;
+	overflow: hidden;
+}
+
+.plany-treningowe img {
+	min-height: 25%;
+	min-width: 25%;
+	transition: all 0.5s ease-in-out;
+}
+
+.plany-treningowe img:hover {
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);
+	cursor: pointer;
+}
+
+.plany-treningowe-tekst {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #002036;
+	width: 100%;
+}
+
+.plany-treningowe-tekst p {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	display: block;
+}
+
+#plany img {
+	width: 100%;
+}
+
+/* Sekcja article */
+#article {
+	background-color: #000016;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+#article h1 {
+	text-align: center;
+	font-size: 70px;
+	font-weight: 500;
+}
+
+#article p {
+	font-size: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* Kalkulator BMI */
+
+#kalkulator {
+	background-color: #0089a3;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 5%;
+	padding-bottom: 15%;
+	font-size: 25px;
+}
+
+#kalkulator h1 {
+	font-size: 70px;
+}
+
+#kalkulator h3 {
+	font-size: 25px;
+	padding-bottom: 5%;
+}
+
+#kalkulator ul li {
+	list-style-type: none;
+}
+
+.kalkulatorbmi {
+	background: linear-gradient(
+		60deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.5)
+	);
+	border-radius: 15px;
+	padding: 5%;
+	box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.5);
+}
+
+.kalkulatorbmi .wzrost {
+	padding-bottom: 5px;
+}
+
+.kalkulatorbmi .waga {
+	padding-bottom: 25px;
+}
+
+#btn {
+	background-color: #000016;
+	border-style: none;
+	color: #e3f2fd;
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	transition: all 0.8s ease-in-out;
+}
+
+#btn:hover {
+	background-color: #e3f2fd;
+	border-style: none;
+	color: #000016;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.8s ease-in-out;
+}
+
+#info {
+	padding-left: 20%;
+	padding-right: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Stopka */
+
+#footer {
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	padding-bottom: 2%;
+}
+
+.footer-social {
+	background-color: #142033;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	display: flex;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 25px;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-link {
+	padding-bottom: 2rem;
+	text-decoration: underline;
+}
+
+.footer-copy {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	margin-top: 5%;
+	font-size: 18px;
+}
+
+/* Zapytania medialne na urzadzenia mobilne */
+
+@media (max-width: 749px) {
+	#header ul {
+		position: absolute;
+		left: 0;
+		right: 0;
+		padding: 50px;
+		height: 100vh;
+		text-align: center;
+		overflow: auto;
+		background-color: #000016;
+		flex-direction: column;
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(3);
+		transition: all 1.2s ease-in-out;
+	}
+
+	#header .logo {
+		padding-left: 5%;
+	}
+
+	#header ul li a {
+		margin: 5px;
+		font-size: 24px;
+		color: #e3f2fd;
+		text-align: center;
+	}
+
+	#header.active1 ul {
+		opacity: 1;
+		top: 50px;
+		visibility: inherit;
+		height: 100vh;
+		transform: scale(1);
+		transition: all 1.2s ease-in-out;
+	}
+
+	.toggle {
+		display: block;
+		position: relative;
+		width: 70px;
+		height: 50px;
+		background-image: url(https://img.icons8.com/material-outlined/48/ffffff/menu--v1.png);
+		background-repeat: no-repeat;
+		cursor: pointer;
+		transform: scale(1);
+		transition: all 0.5s ease-in-out;
+	}
+
+	#header.active1 .toggle {
+		background-image: url(https://img.icons8.com/material-rounded/48/ffffff/multiply--v1.png);
+		background-repeat: no-repeat;
+		transform: scale(1);
+		transition: all 0.5s ease-in-out;
+	}
+
+	.tekst {
+		font-size: 2em;
+	}
+
+	#plany h1 {
+		text-align: center;
+		padding-top: 5%;
+		text-transform: uppercase;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+
+	.plany-trn {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	#article {
+		text-align: left;
+	}
+
+	#article h1 {
+		text-align: center;
+		font-size: 55px;
+		font-weight: 500;
+	}
+
+	#article p {
+		font-size: 22px;
+	}
+
+	.footer-social {
+		background-color: #142033;
+		padding-top: 15%;
+		padding-bottom: 15%;
+		display: flex;
+		flex-direction: column;
+		gap: 90px;
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 25px;
+	}
+
+	.social {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-copy {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		font-size: 18px;
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#kalkulator {
+		font-size: 16px;
+	}
+
+	#kalkulator h1 {
+		font-size: 50px;
+	}
+
+	#info {
+		padding-left: 5%;
+		padding-right: 5%;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.kalkulatorbmi .wzrost {
+		padding-bottom: 2%;
+	}
+
+	.kalkulatorbmi .waga {
+		padding-bottom: 5%;
+	}
+}

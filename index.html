@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
+
+    <script src="app.js"></script>
+    <title>Aplikacja - SportPlus+</title>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header id="header">
+        <div class="logo">
+            <a href="#main">
+                <h2>Sport<span style="color: #0089a3;">Plus</span>+</h2>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#plany">Plany treningowe</a></li>
+                <li><a href="#kalkulator">BMI</a></li>
+                <li><a href="#article">Informacje</a></li>
+                <li><a href="#footer">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Sekcja główna-->
+
+    <main id="main">
+        <iframe width="100%" height="600"
+            src="https://www.youtube.com/embed/g_bMfP6_TOw?autoplay=1&mute=1&controls=0&loop=1&playlist=g_bMfP6_TOw&start=10"
+            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </main>
+
+    <!-- Plany treningowe -->
+
+    <section id="plany">
+
+        <h1>Plany treningowe</h1>
+
+        <div class="plany-trn">
+
+
+            <div class="plany-treningowe">
+
+                <img src="img/kobieta.jpg" alt="kobieta na siłowni">
+                <div class="plany-treningowe-tekst">
+                    <p>Plan treningowy dla kobiet</p>
+                </div>
+
+            </div>
+
+            <div class="plany-treningowe">
+
+                <img src="img/mezczyzna.jpeg" alt="mezczyzna na siłowni">
+                <div class="plany-treningowe-tekst">
+                    <p>Plan treningowy dla mężczyzn</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sekcja article -->
+
+    <article id="article">
+        <h1>Sport<span style="color: #0089a3;">Plus</span>+</h1>
+        <p>Strona oraz aplikacja powstała po to, aby promować sportowy tryb życia.</p>
+        <p>Istniejemy na rynku już ponad 7 lat i przez ten czas pomogliśmy wielu osobom w różnym przedziale wiekowym.
+        </p>
+
+
+        <p>Nasz projekt jest skierowany dla każdego bez względu na wiek oraz predyspozycje sportowe. <br>
+            Każdy znajdzie tutaj coś dla siebie!</p>
+
+        <p>Plany treningowe układają doświadczeni sportowcy i trenerzy z poszczególnych dyscyplin sportowych.</p>
+        <p> Możesz być pewna/pewny, że uzyskasz oczekiwane efekty, dzięki współpracy z nami!</p>
+    </article>
+
+    <!-- Kalkulator BMI -->
+    <section id="kalkulator">
+
+        <h1>Kalkulator BMI</h1>
+        <h3>Sprawdź swój wskaźnik BMI</h3>
+        <div class="kalkulatorbmi">
+            <form>
+                <div class="wzrost">
+                    <label for="height">Wzrost (w cm)</label>
+                    <input type="number" name="height" id="height-input" required>
+                </div>
+
+                <div class="waga">
+                    <label for="weight">Waga (w kg)</label>
+                    <input type="number" name="Weight" id="weight-input" required>
+
+                </div>
+
+                <input type="button" value="OBLICZ" id="btn" onclick="bmiCalculator()">
+                <p id="result"></p>
+                <p id="comment"></p>
+                <p id="info"></p>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Stopka  -->
+    <footer id="footer">
+
+        <p>Sport<span style="color: #0089a3;">Plus</span>+
+
+        <div class="footer-social">
+
+            <div class="social">
+                <span class="social-link">Obserwuj nas:</span>
+                <i class="fab fa-facebook"> /SportPlus+</i>
+                <i class="fab fa-instagram"> /@SportPlus+</i>
+            </div>
+
+            <div class="social">
+                <span class="social-link">Kontakt:</span>
+                <i class="fas fa-phone-alt"> 793-565-098</i>
+                <i class="far fa-envelope"> sportplus@kontakt.com</i>
+            </div>
+
+            <div class="social">
+                <span class="social-link">Aplikacja mobilna: </span>
+                <i class="fas fa-mobile-alt"> SportPlus+ Mobile App <br> (już wkrótce!)</i>
+            </div>
+
+        </div>
+        <span class="footer-copy">
+            Copyright &copy; 2022 SJ Web Developer. All rights reserved.
+        </span>
+    </footer>
+
+    <script>
+        function toggle() {
+            let header = document.querySelector("header");
+            header.classList.toggle("active1");
+        }
+    </script>
+</body>
+
+</html>
